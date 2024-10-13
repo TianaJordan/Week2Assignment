@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1</title>
+    <title>Week 2</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="form.html">Form</a>
-        <a href="table.html">Table</a>
-    </nav>
-
-<!-- For my form I created a way to sign up for an email newsletter. It includes two text inputs, labels and a button.  -->
- 
-    <h1>Monthly Newsletter</h1>
-
-    <form>
+    <div class="section-main">
+        <nav class="navbar">
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="form.html">Form</a>
+                <a class="nav-item" href="table.html">Table</a>
+        </nav> 
+        <h1>Newsletter</h1>
+    <div class="section-form">
+        <h3>Sign up for a monthly newsletter</h3>
+    </div>
+        <form>
         <label for="name">Name:</label>
         <input type="text" name="first name">
-        <br><br>
         <label for="email">Email:</label>
         <input type="text" name="email">
-        <br><br>
-        <input type="submit" value="Subscribe">
-    </form>
-    
-    <hr>
-
+        <button type="submit">Subscribe</button>
+        </form>
+    <br>
     <footer>
         &copy; 2024
     </footer>

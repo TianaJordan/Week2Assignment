@@ -1,0 +1,159 @@
+/* ---ELEMENT SELECTORS--- */
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #637379;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    text-align: left;
+}
+
+p,
+ul {
+    text-align: left;
+}
+
+img {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #a1a0a0;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ---CUSTOM CLASS SELECTORS--- */
+
+.navbar {
+    background-color: #b8b6b6;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+/* I targeted the nav bar items to make them look like a button instead of plain text by adding a border and drop shadow.  */
+
+.nav-item {
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0 0 0 / .5);
+    padding: 5px;
+}
+ 
+/* Within the buttons, I removed the underlink from the link, added padding around the text and changed the font size. */
+
+.navbar a {
+    color:black;
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 20px;
+}
+
+/* The main section is a container for all the content that will be displayed on the page. I gave it a light background and margins. */
+
+.section-main {
+    background-color: #d6d6d6;
+    margin: 3rem 6rem;
+}
+
+/* I then split each project into its own section to target and style them separately. */
+
+.section-1,
+.section-2 {
+    text-align: left;
+    margin: 2rem;
+    overflow: auto;
+}
+
+/* I created divs to target the images for the projects separately from the logos on the table page.*/
+
+.section-1 img,
+.section-2 img
+ {
+    margin: 5px;
+}
+
+/* ---PSEUDO CLASS--- */
+/* This targets an element to enable styling for its display state. */
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+
+/* ---FORM--- */
+form {
+    background-color: #4d5a5e;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 10px;
+    margin: 1rem;
+}
+
+form label {
+    color:rgb(255, 255, 255);
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* I created a div for the form heading to add some space and align it with the form itself.  */
+
+.section-form {
+    margin-left: 1rem ;
+}
+
+/* Similar to the links in the naviagtion, this pseudo class adds a background color to the subscribe button when you hover over it. */
+
+form button:hover {
+    background-color: #a2baba;
+}
+
+/* ---TABLE--- */
+/* To make the table more noticeable on the page, I gave it a border and added padding to the rows and margins. */
+
+table {
+    background-color: #d4d4d6;
+    margin: 1rem;
+    border: solid 2px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+thead {
+    background-color: #4d5a5e;
+    color: white;
+}
+
+/* This element selector targets the links within the table where I changed the deafult blue link color to black */
+
+table a {
+    color:black;
+}
+
+/* I created a pseudo class for the links to turn white when you hover. */
+
+table a:hover {
+    color:white;
+}

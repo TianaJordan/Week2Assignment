@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1</title>
+    <title>Week 2</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="form.html">Form</a>
-        <a href="table.html">Table</a>
-    </nav>
+    <div class="section-main">
+        <nav class="navbar">
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="form.html">Form</a>
+                <a class="nav-item" href="table.html">Table</a>
+        </nav>
 
     <h1>Contact</h1>
-
-<!-- The table I created displays three rows and two columns that include both header and data cells. "Site" and "Link" are bolded because they are the header rows. The remaining rows serve as the table data that is associated with each header. -->
-
     <table>
-        <tr>
+        <thead>
             <th>Site</th>
             <th>Link</th>
-        </tr>
-        <tr>
-            <td><img src="images/icon-logo-instagram.png"></td>
-            <td><a href="#">Follow on Instagram</a>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="images/icon-logo-facebook.png"></td>
-            <td><a href="#">Visit Facebook</a>
-            </td>
-        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="images/icon-logo-instagram.png" alt="Instagram logo"></td>
+                <td><a href="#">Follow on Instagram</a></td>
+            </tr>
+            <tr>
+                <td><img src="images/icon-logo-facebook.png" alt="Facebook logo"></td>
+                <td><a href="#">Visit Facebook</a></td>
+            </tr>
+        </tbody>
     </table>
-    <hr>
-
-<!-- Instead of using the site name next to the links, I added an image element within the table data element to show the site logo. -->
+    <br>
 
     <footer>
         &copy; 2024
